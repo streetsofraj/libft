@@ -16,9 +16,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char		*pdst;
 	const char	*psrc;
-
+	
 	pdst = (char*)dst;
-	psrc = (const char*)src;
+	psrc = (const char*)src;	
+        
+	if ((pdst == NULL) && (psrc == NULL))
+        return (NULL);
+	
 	while (n--)
 		*pdst++ = *psrc++;
 	return (dst);

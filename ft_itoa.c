@@ -29,7 +29,7 @@ static unsigned int	get_nb_digit(long n_l, int sign)
 	return (nb_digit);
 }
 
-static void			convert_nb(char *outstr, long n_l, unsigned int nb_digit,
+static void	convert_nb(char *outstr, long n_l, unsigned int nb_digit,
 		int sign)
 {
 	outstr[nb_digit] = '\0';
@@ -44,7 +44,7 @@ static void			convert_nb(char *outstr, long n_l, unsigned int nb_digit,
 		outstr[0] = '-';
 }
 
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char			*outstr;
 	long			n_l;

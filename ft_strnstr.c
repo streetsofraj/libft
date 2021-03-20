@@ -19,21 +19,21 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	char	*k;
 
 	if (!*s2)
-		return ((char*)s1);
+		return ((char *)s1);
 	while (len-- && *s1)
 	{
 		if (*s1 == *s2)
 		{
 			i = len;
-			j = (char*)s1 + 1;
-			k = (char*)s2 + 1;
+			j = (char *)s1 + 1;
+			k = (char *)s2 + 1;
 			while (i-- && *j && *k && *j == *k)
 			{
 				++j;
 				++k;
 			}
 			if (!*k)
-				return ((char*)s1);
+				return ((char *)s1);
 		}
 		++s1;
 	}
