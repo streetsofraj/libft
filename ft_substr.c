@@ -6,7 +6,7 @@
 /*   By: msandana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/05 11:22:12 by msandana          #+#    #+#             */
-/*   Updated: 2021/03/05 12:18:09 by msandana         ###   ########.fr       */
+/*   Updated: 2021/03/29 18:24:56 by msandana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!(cpy = (char*)malloc(len + 1)))
 		return (NULL);
 	if (start >= ft_strlen(s))
-                return (cpy);	
+		return (cpy);
 	while (i < len)
 	{
 		cpy[i] = s[start];

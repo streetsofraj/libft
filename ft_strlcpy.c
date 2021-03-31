@@ -6,7 +6,7 @@
 /*   By: msandana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 17:10:09 by msandana          #+#    #+#             */
-/*   Updated: 2021/03/04 13:55:56 by msandana         ###   ########.fr       */
+/*   Updated: 2021/03/29 18:25:18 by msandana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		i++;
 	return (i);
 }
-

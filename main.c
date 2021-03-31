@@ -434,3 +434,4 @@ char	ft_toindex(unsigned int index, char c)
 {
 	return (c - c + 48 + index);
 }
+

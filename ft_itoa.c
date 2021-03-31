@@ -6,13 +6,13 @@
 /*   By: msandana <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/05 11:27:16 by msandana          #+#    #+#             */
-/*   Updated: 2021/03/05 13:25:10 by msandana         ###   ########.fr       */
+/*   Updated: 2021/03/29 18:28:30 by msandana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static unsigned int	get_nb_digit(long n_l, int sign)
+static unsigned int		get_nb_digit(long n_l, int sign)
 {
 	unsigned int	nb_digit;
 
@@ -29,8 +29,8 @@ static unsigned int	get_nb_digit(long n_l, int sign)
 	return (nb_digit);
 }
 
-static void	convert_nb(char *outstr, long n_l, unsigned int nb_digit,
-		int sign)
+static	void			convert_nb(char *outstr, long n_l,
+						unsigned int nb_digit, int sign)
 {
 	outstr[nb_digit] = '\0';
 	outstr[--nb_digit] = n_l % 10 + '0';
@@ -44,7 +44,7 @@ static void	convert_nb(char *outstr, long n_l, unsigned int nb_digit,
 		outstr[0] = '-';
 }
 
-char	*ft_itoa(int n)
+char					*ft_itoa(int n)
 {
 	char			*outstr;
 	long			n_l;
